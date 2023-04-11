@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>T<em id="temp">e</em>mp<em id="vert">e</em>ratur<em id="con">e</em> Convert<em id="vert">e</em>r</h1>
+    <form>
+      <label for="temp">Enter temperature:</label>
+      <input type="number" id="temp" name="temp" required>
+      <label for="unit">Select unit:</label>
+      <select id="unit" name="unit">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <button type="button" onclick="convert()">Convert</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
